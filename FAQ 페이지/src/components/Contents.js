@@ -2,7 +2,7 @@ import Content from "./Content";
 
 const Contents = () => {
 
-  const questionAndAnser = [
+  const questionAndAnswer = [
     {
       id: 1,
       question: 'How many team members can I invite?',
@@ -36,11 +36,11 @@ const Contents = () => {
         <h2>FAQ</h2>
       </div>
       <div>
-        <Content question={questionAndAnser[0].question} answer={questionAndAnser[0].answer} />
-        <Content question={questionAndAnser[1].question} answer={questionAndAnser[1].answer} />
-        <Content question={questionAndAnser[2].question} answer={questionAndAnser[2].answer} />
-        <Content question={questionAndAnser[3].question} answer={questionAndAnser[3].answer} />
-        <Content question={questionAndAnser[4].question} answer={questionAndAnser[4].answer} />
+        <Content question={questionAndAnswer[0].question} answer={questionAndAnswer[0].answer} />
+        <Content question={questionAndAnswer[1].question} answer={questionAndAnswer[1].answer} />
+        <Content question={questionAndAnswer[2].question} answer={questionAndAnswer[2].answer} />
+        <Content question={questionAndAnswer[3].question} answer={questionAndAnswer[3].answer} />
+        <Content question={questionAndAnswer[4].question} answer={questionAndAnswer[4].answer} />
       </div>
   </div>
   )

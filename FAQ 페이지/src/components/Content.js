@@ -1,4 +1,14 @@
+import { useState } from 'react';
+
 const Content = (props) => {
+
+  const useToggle = (initialState) => {
+    const [toggleValue, setToggleValue] = useState(initialState);
+    const toggler = () => {setToggleValue(!toggleValue)};
+    return [toggleValue, toggler]
+  };
+
+  const [toggle, setToggle] = useToggle();
 
   return (
     <div>
@@ -7,11 +17,13 @@ const Content = (props) => {
           {props.question} 
         </div>
         <div>
-          <button>토글 버튼</button>  
+          <button onClick={setToggle}>
+            토글 버튼
+          </button>  
         </div>
       </div>
       <div>
-        {props.answer}
+        {toggle && props.answer}
       </div>
     </div>
   )
