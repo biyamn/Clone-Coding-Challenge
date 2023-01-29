@@ -1,14 +1,10 @@
 import { useState } from 'react';
 
 const Content = (props) => {
-
-  const useToggle = (initialState) => {
-    const [toggleValue, setToggleValue] = useState(initialState);
-    const toggler = () => {setToggleValue(!toggleValue)};
-    return [toggleValue, toggler]
-  };
-
-  const [toggle, setToggle] = useToggle();
+  const setToggle = () => {
+    setIsOpen(!isOpen);
+  }
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
@@ -23,7 +19,7 @@ const Content = (props) => {
         </div>
       </div>
       <div>
-        {toggle && props.answer}
+        {isOpen && props.answer}
       </div>
     </div>
   )
