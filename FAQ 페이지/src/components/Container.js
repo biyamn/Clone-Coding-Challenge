@@ -1,9 +1,9 @@
 import Contents from "./Contents";
 
-const Container = () => {
+const Container = (props) => {
 
   return (
-    <div>
+    <div className={props.className}>
       <div>
         왼쪽 이미지 - 큰 컴퓨터와 사람
       </div>
