@@ -3,7 +3,9 @@ import Container from './components/Container';
 
 function App() {
   return (
-    <Container className='box-border border-2 border-black  h-100 w-100' />
+    <div className='container'>
+      <Container className='boxInContainer'/>
+    </div>
   );
 }
 

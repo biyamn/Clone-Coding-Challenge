@@ -1,13 +1,14 @@
 import Contents from "./Contents";
+import './Container.css';
 
 const Container = (props) => {
 
   return (
     <div className={props.className}>
-      <div>
+      <div className='leftOfBoxInContainer'>
         왼쪽 이미지 - 큰 컴퓨터와 사람
       </div>
-      <Contents />
+      <Contents className='rightOfBoxInContainer'/>
     </div>
   )
 }

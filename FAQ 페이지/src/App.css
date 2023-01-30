@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  
+}
+
+.boxInContainer {
+  height: 500px;
+  border: solid white;
+  width: 1000px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 20px 60px -30px
+}

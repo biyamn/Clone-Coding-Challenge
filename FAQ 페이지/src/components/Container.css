@@ -1,0 +1,12 @@
+.boxInContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftOfBoxInContainer {
+  flex: 1;
+}
+
+.rightOfBoxInContainer {
+  flex: 1;
+}

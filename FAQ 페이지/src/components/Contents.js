@@ -1,6 +1,6 @@
 import Content from "./Content";
 
-const Contents = () => {
+const Contents = (props) => {
 
   const questionAndAnswer = [
     {
@@ -31,7 +31,7 @@ const Contents = () => {
   ]
 
   return (
-    <div>
+    <div className={props.className}>
       <div>
         <h2>FAQ</h2>
       </div>
