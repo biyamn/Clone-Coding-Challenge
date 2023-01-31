@@ -4,9 +4,11 @@
 }
 
 .leftOfBoxInContainer {
-  flex: 1;
+  flex: 4;
 }
 
 .rightOfBoxInContainer {
-  flex: 1;
+  margin: 50px;
+  margin-right: 100px;
+  flex: 5;
 }

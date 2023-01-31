@@ -1,0 +1,30 @@
+.questionAnswerContainer {
+  padding: 10px
+}
+
+.questionToggleBtnContainer {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid;
+  padding: 0px;
+}
+
+.questionNoLine {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+}
+
+.question {
+  flex: 4;
+}
+
+.toggleBtn {
+  flex: 1;
+  background-color:transparent;
+  border: none;
+}
+
+.underline{
+  border-bottom: 1px solid;
+}
